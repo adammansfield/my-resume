@@ -3,7 +3,6 @@ sudo: required
 cache:
     - apt
 before_install:
-    - sudo apt update -qq
-    - sudo apt install -y texlive texlive-latex-extra
+    - sudo ./install-dependencies.sh
 script:
     - make
