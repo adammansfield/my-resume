@@ -1,8 +1,6 @@
-sudo: required
+language: minimal
 
-cache:
-    - apt
-before_install:
+install:
     - sudo ./install-dependencies.sh
 script:
     - make
