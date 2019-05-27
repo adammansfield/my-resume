@@ -1,30 +1,25 @@
 \documentclass[letterpaper,11pt]{article}
 
-% Margins
-%-----------------------------------------------------------------------------
-\setlength{\evensidemargin}{-0.25in}
+\usepackage[pagesetup]{tucv}
+
 \setlength{\headheight}{-0.25in}
-\setlength{\headsep}{0in}
-\setlength{\oddsidemargin}{-0.25in}
-\setlength{\paperheight}{11in}
-\setlength{\paperwidth}{8.5in}
-\setlength{\tabcolsep}{0in}
-\setlength{\textheight}{9.75in}
-\setlength{\textwidth}{7in}
 \setlength{\topmargin}{-0.3in}
-\setlength{\topskip}{0in}
-\setlength{\voffset}{0.1in}
+
 
 \begin{document}
 
-% Contact Information
-%-----------------------------------------------------------------------------
 \begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
-
   \textbf{{\Large Adam Mansfield}} & \textbf{\today} \\
   \texttt{me@adammansfield.com} & Greater Toronto Area \\
-  \texttt{(xxx) xxx-xxxx} & \texttt{github.com/adammansfield}
-
+  \texttt{(xxx) xxx-xxxx} & \texttt{github.com/adammansfield} \\
+  \newline
 \end{tabular*}
+
+\resheading{Education}
+\begin{itemize}
+  \item[]
+    \resschool{McMaster University}{\mbox{Hamilton, ON}}
+    \resdegree{Bachelor of Engineering}{Computer Engineering}{2008 - 2014}
+\end{itemize}
 
 \end{document}
