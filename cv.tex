@@ -1,4 +1,45 @@
 \documentclass[letterpaper,11pt]{article}
+
+\usepackage[pagesetup]{tucv}
+
+\input{tucv.extensions.tex}
+
+\setlength{\headheight}{-0.25in}
+\setlength{\topmargin}{-0.3in}
+
+
 \begin{document}
-Adam Mansfield
+
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+  \textbf{{\Large Adam Mansfield}} & \textbf{\today} \\
+  \texttt{me@adammansfield.com} & Greater Toronto Area \\
+  (xxx) xxx-xxxx & github.com/adammansfield \\
+  \newline
+\end{tabular*}
+
+%\resheading{Employment}
+%\begin{itemize}
+%\end{itemize}
+
+\resheading{Skills}
+\begin{itemize}
+  \item[]
+  \resskill{Programming Languages}{C, C++17, C\#, Go, Java, Javascript, Python}
+  \resskill{CI/CD Tools}          {Artifactory, Azure Pipelines, Docker, Jenkins, travis-ci}
+  \resskill{Collaboration}        {Agile, Github, Jira, Scrum, Slack, Swarm}
+  \resskill{Development Tools}    {gdb, SSH, Vim, Visio, Visual Studio, Visual Studio Code}
+  \resskill{Operating Systems}    {Linux, OSX, Windows}
+  \resskill{Shell Scripting}      {Bash, Batch, Powershell, Shell}
+  \resskill{Technologies}         {CSS/HTML, SQL, TCP/UDP, VMware/Hyper-V}
+  \resskill{Testing}              {googletest (C++), nose (Python), xUnit (C\#), testing (Go)}
+  \resskill{Version Control}      {Git, Perforce}
+\end{itemize}
+
+\resheading{Education}
+\begin{itemize}
+  \item[]
+    \resschool{McMaster University}{\mbox{Hamilton, ON}}
+    \resdegree{Bachelor of Engineering}{Computer Engineering}{2008 - 2014}
+\end{itemize}
+
 \end{document}
