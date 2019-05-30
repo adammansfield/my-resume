@@ -1,9 +1,11 @@
+common_files = tucv.extensions.tex
+
 pdfs: cv.pdf resume.pdf
 
-cv.pdf: cv.tex
+cv.pdf: cv.tex $(common_files)
 	pdflatex cv.tex
 
-resume.pdf: resume.tex
+resume.pdf: resume.tex $(common_files)
 	pdflatex resume.tex
 
 .PHONY: clean

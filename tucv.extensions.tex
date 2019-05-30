@@ -1,0 +1,6 @@
+\NewDocumentCommand\resskill{O{0pt}mm}{
+ \begin{tabular*}{0.9\textwidth}[t]{@{\hspace{#1}}p{1.75in-#1}@{\extracolsep{\fill}}p{4in}}
+   \raggedright #2 & #3
+   \tabularnewline
+ \end{tabular*}
+}
